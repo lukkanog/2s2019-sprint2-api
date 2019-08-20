@@ -1,0 +1,14 @@
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\bin\Debug\netcoreapp2.1\Senai.Sstop.WebApi.deps.json
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\bin\Debug\netcoreapp2.1\Senai.Sstop.WebApi.runtimeconfig.json
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\bin\Debug\netcoreapp2.1\Senai.Sstop.WebApi.runtimeconfig.dev.json
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\bin\Debug\netcoreapp2.1\Senai.Sstop.WebApi.dll
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.csprojAssemblyReference.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.RazorAssemblyInfo.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.RazorAssemblyInfo.cs
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.AssemblyInfoInputs.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.AssemblyInfo.cs
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\bin\Debug\netcoreapp2.1\Senai.Sstop.WebApi.pdb
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.dll
+C:\Users\46735197879\Desktop\lucas_2semestre\sprint2\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.pdb
