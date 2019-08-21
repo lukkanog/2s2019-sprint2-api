@@ -12543,11 +12543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\46735197879\\Desktop\\lucas_2semestre\\2s2019-sprint2-api\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi.csproj",
-      "projectName": "Senai.Filmes.WebApi",
-      "projectPath": "C:\\Users\\46735197879\\Desktop\\lucas_2semestre\\2s2019-sprint2-api\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\46735197879\\Desktop\\lucas_2semestre\\2s2019-sprint2-api\\M_Peoples\\Senai.Peoples.WebApi\\Senai.Peoples.WebApi\\Senai.Peoples.WebApi.csproj",
+      "projectName": "Senai.Peoples.WebApi",
+      "projectPath": "C:\\Users\\46735197879\\Desktop\\lucas_2semestre\\2s2019-sprint2-api\\M_Peoples\\Senai.Peoples.WebApi\\Senai.Peoples.WebApi\\Senai.Peoples.WebApi.csproj",
       "packagesPath": "C:\\Users\\46735197879\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\46735197879\\Desktop\\lucas_2semestre\\2s2019-sprint2-api\\Senai.Filmes.WebApi\\Senai.Filmes.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\46735197879\\Desktop\\lucas_2semestre\\2s2019-sprint2-api\\M_Peoples\\Senai.Peoples.WebApi\\Senai.Peoples.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
