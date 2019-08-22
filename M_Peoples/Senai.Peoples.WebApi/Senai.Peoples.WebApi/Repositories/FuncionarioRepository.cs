@@ -1,4 +1,5 @@
 ﻿using Senai.Peoples.WebApi.Models;
+using Senai.Peoples.WebApi.Viewmodels;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -30,7 +31,7 @@ namespace Senai.Peoples.WebApi.Repositories
                         funcionario.Nome = sdr["Nome"].ToString();
                         funcionario.Sobrenome = sdr["Sobrenome"].ToString();
                         funcionario.DataNascimento = Convert.ToDateTime(sdr["DataNascimento"]);
-                        funcionario.NomeCompleto = $"{funcionario.Nome} {funcionario.Sobrenome}";
+                        //funcionario.NomeCompleto = $"{funcionario.Nome} {funcionario.Sobrenome}";
                         listaFuncionarios.Add(funcionario);
                     }
                 }
@@ -80,7 +81,7 @@ namespace Senai.Peoples.WebApi.Repositories
                             funcionario.Nome = sdr["Nome"].ToString();
                             funcionario.Sobrenome = sdr["Sobrenome"].ToString();
                             funcionario.DataNascimento = Convert.ToDateTime(sdr["DataNascimento"]);
-                            funcionario.NomeCompleto = $"{funcionario.Nome} {funcionario.Sobrenome}";
+                            //funcionario.NomeCompleto = $"{funcionario.Nome} {funcionario.Sobrenome}";
                             return funcionario;
                         }
                     }
@@ -120,15 +121,15 @@ namespace Senai.Peoples.WebApi.Repositories
             }
         }//metodo
 
-        public List<FuncionarioModel> ListarNomesCompletos()
+        public List<NomeCompletoViewmodel> ListarNomesCompletos()
         {
             var listaVelha = Listar();
-            var listaNova = new List<FuncionarioModel>();
+            var listaNova = new List<NomeCompletoViewmodel>();
             foreach (var item in listaVelha)
             {
                 if (item != null)
                 {
-                    FuncionarioModel funcionario = new FuncionarioModel();
+                    var funcionario = new NomeCompletoViewmodel();
                     funcionario.NomeCompleto = $"{item.Nome} {item.Sobrenome}";
                     listaNova.Add(funcionario);
                 }
@@ -157,7 +158,7 @@ namespace Senai.Peoples.WebApi.Repositories
                         funcionario.Nome = sdr["Nome"].ToString();
                         funcionario.Sobrenome = sdr["Sobrenome"].ToString();
                         funcionario.DataNascimento = Convert.ToDateTime(sdr["DataNascimento"]);
-                        funcionario.NomeCompleto = $"{funcionario.Nome} {funcionario.Sobrenome}";
+                        //funcionario.NomeCompleto = $"{funcionario.Nome} {funcionario.Sobrenome}";
                         return funcionario;
                     }
                 }
@@ -186,7 +187,7 @@ namespace Senai.Peoples.WebApi.Repositories
                         funcionario.Nome = sdr["Nome"].ToString();
                         funcionario.Sobrenome = sdr["Sobrenome"].ToString();
                         funcionario.DataNascimento = Convert.ToDateTime(sdr["DataNascimento"]);
-                        funcionario.NomeCompleto = $"{funcionario.Nome} {funcionario.Sobrenome}";
+                        //funcionario.NomeCompleto = $"{funcionario.Nome} {funcionario.Sobrenome}";
                         listaOrdenada.Add(funcionario);
                     }
                 }

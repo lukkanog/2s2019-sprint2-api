@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Senai.Peoples.WebApi.Models;
 using Senai.Peoples.WebApi.Repositories;
+using Senai.Peoples.WebApi.Viewmodels;
 
 namespace Senai.Peoples.WebApi.Controllers
 {
@@ -57,7 +58,7 @@ namespace Senai.Peoples.WebApi.Controllers
         }//METODO
 
         [HttpGet("nomescompletos")]
-        public IEnumerable<FuncionarioModel> ListarNomesCompletos()
+        public IEnumerable<NomeCompletoViewmodel> ListarNomesCompletos()
         {
             return funcionarioRepository.ListarNomesCompletos();
         }

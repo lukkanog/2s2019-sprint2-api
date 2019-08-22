@@ -18,6 +18,6 @@ namespace Senai.Peoples.WebApi.Models
 
         public DateTime DataNascimento { get; set; }
 
-        public string NomeCompleto { get; set; }
+        //public string NomeCompleto { get; set; }
     }
 }

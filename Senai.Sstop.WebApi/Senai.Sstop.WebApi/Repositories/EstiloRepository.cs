@@ -16,8 +16,7 @@ namespace Senai.Sstop.WebApi.Repositories
         //};
 
         //string de conexão
-        private string StringConexao =
-            "Data Source=.\\SqlExpress; initial catalog=M_SStop; User Id=sa;Pwd=132";
+        private string StringConexao ="Data Source=.\\SqlExpress; initial catalog=M_SStop; User Id=sa;Pwd=132";
 
 
         /// <summary>

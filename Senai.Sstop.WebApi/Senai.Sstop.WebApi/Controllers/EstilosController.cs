@@ -59,7 +59,7 @@ namespace Senai.Sstop.WebApi.Controllers
             return Ok();
         }
         
-        [HttpDelete("{id)")]
+        [HttpDelete("{id}")]
         public IActionResult Deletar(int id)
         {
             EstiloRepository.Deletar(id);
