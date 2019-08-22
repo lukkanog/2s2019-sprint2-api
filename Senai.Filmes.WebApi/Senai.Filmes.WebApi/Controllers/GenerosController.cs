@@ -20,7 +20,13 @@ namespace Senai.Filmes.WebApi.Controllers
         public IEnumerable<GeneroDomain> Listar()
         {
             return generoRepository.Listar();
-            
+
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult BuscarPorId(int id)
+        {
+            return Ok(generoRepository.BuscarPorId(id));
         }
 
         [HttpPost]
@@ -30,12 +36,21 @@ namespace Senai.Filmes.WebApi.Controllers
             return Ok();
         }
 
-        //[HttpPut("{id}")]
-        //public IActionResult Alterar(int id)
-        //{
-        //    generoRepository.Alterar(id);
-        //    return Ok();
-        //}
+        [HttpPut("{id}")]
+        public IActionResult Alterar(int id,GeneroDomain genero)
+        {
+            genero.Id = id;
+            try
+            {
+                generoRepository.Alterar(genero);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(new { Mensagem = $"Ocorreu um erro:{e.Message}" });
+            }
+
+        }
 
 
         [HttpDelete("{id}")]

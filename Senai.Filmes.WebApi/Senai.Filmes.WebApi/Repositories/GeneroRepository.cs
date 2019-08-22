@@ -41,6 +41,37 @@ namespace Senai.Filmes.WebApi.Repositories
         }//                fim do metodo               // 
 
 
+        public GeneroDomain BuscarPorId(int id)
+        {
+            string Query = "SELECT * FROM Generos WHERE IdGenero = @Id";
+
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                con.Open();
+                SqlDataReader sdr;
+
+                using (SqlCommand cmd = new SqlCommand(Query, con))
+                {
+                    cmd.Parameters.AddWithValue("@Id", id);
+                    sdr = cmd.ExecuteReader();
+
+                    if (sdr.HasRows)
+                    {
+                        while (sdr.Read())
+                        {
+                            GeneroDomain genero = new GeneroDomain();
+                            genero.Id = Convert.ToInt32(sdr["IdGenero"]);
+                            genero.Nome = sdr["Nome"].ToString();
+                            return genero;
+                        }
+                    }
+                }
+            }
+            return null; 
+        }//end
+
+
+
         public void Cadastrar(GeneroDomain genero)
         {
             string Query = "INSERT INTO Generos (Nome) VALUES (@Nome)";
@@ -55,18 +86,20 @@ namespace Senai.Filmes.WebApi.Repositories
         }//                fim do metodo               //
 
 
-        //public void Alterar(int id)
-        //{
-        //    string Query = "UPDATE Generos SET Nome = 'teste' WHERE IdGenero = @IdGenero";
+        public void Alterar(GeneroDomain genero)
+        {
+            string Query = "UPDATE Generos SET Nome = @Nome WHERE IdGenero = @IdGenero";
 
-        //    using (SqlConnection con = new SqlConnection(StringConexao))
-        //    {
-        //        con.Open();
-        //        SqlCommand cmd = new SqlCommand(Query, con);
-        //        cmd.Parameters.AddWithValue("@IdGenero",id);
-        //        ////cmd.Parameters.AddWithValue("@Nome", );
-        //    }
-        //}
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Query, con);
+                cmd.Parameters.AddWithValue("@IdGenero", genero.Id);
+                cmd.Parameters.AddWithValue("@Nome",genero.Nome);
+                //cmd.Parameters.AddWithValue("@Nome", );
+                cmd.ExecuteNonQuery();
+            }
+        }
 
 
         public void Deletar(int id)

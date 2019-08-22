@@ -34,11 +34,11 @@ namespace Senai.Sstop.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
-            app.UseSwagger();
-            app.UseSwaggerUI( c =>{
-                c.SwaggerEndpoint("/swagger/v1/swagger.json","SStop API V1");
-            });
+
+                app.UseSwagger();
+                app.UseSwaggerUI( c =>{
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json","SStop API V1");
+                });
         }
     }
 }

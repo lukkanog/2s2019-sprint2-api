@@ -15,7 +15,15 @@ namespace Senai.Filmes.WebApi
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1); 
+            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
+            services.AddSwaggerGen(c =>
+                c.SwaggerDoc("v1",
+                new Swashbuckle.AspNetCore.Swagger.Info
+                {
+                    Title = "SStop API",
+                    Version = "v1"
+                })
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -27,6 +35,11 @@ namespace Senai.Filmes.WebApi
             }
 
             app.UseMvc();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Filmes API V1");
+            });
+
         }
     }
 }
