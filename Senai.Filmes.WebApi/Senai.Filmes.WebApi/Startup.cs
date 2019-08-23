@@ -17,12 +17,12 @@ namespace Senai.Filmes.WebApi
         {
             services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
             services.AddSwaggerGen(c =>
-                c.SwaggerDoc("v1",
-                new Swashbuckle.AspNetCore.Swagger.Info
-                {
-                    Title = "SStop API",
-                    Version = "v1"
-                })
+            c.SwaggerDoc("v1",
+            new Swashbuckle.AspNetCore.Swagger.Info
+            {
+                Title = "SStop API",
+                Version = "v1"
+            })
             );
         }
 
