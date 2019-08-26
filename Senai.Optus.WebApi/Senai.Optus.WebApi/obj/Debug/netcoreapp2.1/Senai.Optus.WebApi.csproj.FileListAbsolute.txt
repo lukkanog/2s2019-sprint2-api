@@ -1,0 +1,14 @@
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\bin\Debug\netcoreapp2.1\Senai.Optus.WebApi.deps.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\bin\Debug\netcoreapp2.1\Senai.Optus.WebApi.runtimeconfig.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\bin\Debug\netcoreapp2.1\Senai.Optus.WebApi.runtimeconfig.dev.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\bin\Debug\netcoreapp2.1\Senai.Optus.WebApi.dll
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\obj\Debug\netcoreapp2.1\Senai.Optus.WebApi.csprojAssemblyReference.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\obj\Debug\netcoreapp2.1\Senai.Optus.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\obj\Debug\netcoreapp2.1\Senai.Optus.WebApi.RazorAssemblyInfo.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\obj\Debug\netcoreapp2.1\Senai.Optus.WebApi.RazorAssemblyInfo.cs
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\obj\Debug\netcoreapp2.1\Senai.Optus.WebApi.AssemblyInfoInputs.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\obj\Debug\netcoreapp2.1\Senai.Optus.WebApi.AssemblyInfo.cs
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\obj\Debug\netcoreapp2.1\Senai.Optus.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\bin\Debug\netcoreapp2.1\Senai.Optus.WebApi.pdb
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\obj\Debug\netcoreapp2.1\Senai.Optus.WebApi.dll
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Optus.WebApi\Senai.Optus.WebApi\obj\Debug\netcoreapp2.1\Senai.Optus.WebApi.pdb

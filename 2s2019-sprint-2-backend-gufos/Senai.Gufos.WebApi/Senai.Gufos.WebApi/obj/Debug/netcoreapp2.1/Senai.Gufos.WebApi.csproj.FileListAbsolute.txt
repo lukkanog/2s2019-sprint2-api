@@ -1,0 +1,14 @@
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufos.WebApi.deps.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufos.WebApi.runtimeconfig.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufos.WebApi.runtimeconfig.dev.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufos.WebApi.dll
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WebApi.csprojAssemblyReference.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WebApi.RazorAssemblyInfo.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WebApi.RazorAssemblyInfo.cs
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WebApi.AssemblyInfoInputs.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WebApi.AssemblyInfo.cs
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\bin\Debug\netcoreapp2.1\Senai.Gufos.WebApi.pdb
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WebApi.dll
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\2s2019-sprint-2-backend-gufos\Senai.Gufos.WebApi\Senai.Gufos.WebApi\obj\Debug\netcoreapp2.1\Senai.Gufos.WebApi.pdb
