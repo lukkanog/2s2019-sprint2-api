@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Senai.Optus.WebApi.Domains;
@@ -23,6 +24,29 @@ namespace Senai.Optus.WebApi.Controllers
         }
 
 
+        [HttpGet("{id}")]
+        public IActionResult BuscarPorId(int id)
+        {
+            var artista = artistaRepository.BuscarPorId(id);
+            if (artista == null)
+                return NotFound(new { Mensagem = "Iiih vei nem tem esse artista ai" });
+
+            return Ok(artista);
+        }
+
+
+        [HttpGet("buscarpornome/{nome}")]
+        public IActionResult BuscarPorArtista(string nome)
+        {
+            var artista = artistaRepository.BuscarPorNome(nome);
+            if (artista == null)
+                return NotFound(new { Mensagem = "Iiih vei nem tem esse artista ai" });
+
+            return Ok(artista);
+        }
+
+
+        [Authorize]
         [HttpPost]
         public IActionResult Cadastrar(Artistas artista)
         {
@@ -35,5 +59,11 @@ namespace Senai.Optus.WebApi.Controllers
                 return BadRequest(new { Mensagem = $"Iih moio - {ex.Message}" });
             }
         }
-    }
+
+
+        
+
+
+
+    }//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }

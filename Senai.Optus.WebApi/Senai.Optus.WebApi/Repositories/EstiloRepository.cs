@@ -1,4 +1,5 @@
-﻿using Senai.Optus.WebApi.Domains;
+﻿using Microsoft.EntityFrameworkCore;
+using Senai.Optus.WebApi.Domains;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,6 +64,31 @@ namespace Senai.Optus.WebApi.Repositories
             }
         }
 
+
+        public int QuantidadeEstilos()
+        {
+            using (OptusContext ctx = new OptusContext())
+            {
+                return ctx.Estilos.Count();
+            }
+        }
+
+        public List<Artistas> ListarArtistasPorEstilo(int idEstilo)
+        {
+            using (OptusContext ctx = new OptusContext())
+            {
+                return ctx.Artistas.Where(x => x.IdEstilo == idEstilo).ToList();
+            }
+        }
+
+
+        //public List<Artistas> ListarArtistasPorNomeEstilo(string estilo)
+        //{
+        //    using (OptusContext ctx = new OptusContext())
+        //    {
+        //        return ctx.Artistas.Include(x.IdAr)
+        //    }
+        //}
 
     }//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~a~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 }

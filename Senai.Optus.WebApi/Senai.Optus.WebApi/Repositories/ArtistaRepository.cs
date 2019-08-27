@@ -27,5 +27,24 @@ namespace Senai.Optus.WebApi.Repositories
                 ctx.SaveChanges();
             }
         }
-    }
+
+
+        public Artistas BuscarPorId(int id)
+        {
+            using (OptusContext ctx = new OptusContext())
+            {
+                return ctx.Artistas.Find(id);
+            }
+        }
+
+
+        public Artistas BuscarPorNome(string nome)
+        {
+            using (OptusContext ctx = new OptusContext())
+            {
+                return ctx.Artistas.FirstOrDefault(x => x.Nome == nome);
+            }
+        }
+
+    }////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }

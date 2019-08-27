@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Senai.Optus.WebApi.Domains;
@@ -15,17 +16,19 @@ namespace Senai.Optus.WebApi.Controllers
     public class EstilosController : ControllerBase
     {
         EstiloRepository estiloRepository = new EstiloRepository();
-            
+
         /// <summary>
         /// Lista todos os estilos
         /// </summary>
         /// <returns>Lista de todos os estilos</returns>
+        [Authorize]
         [HttpGet]
         public IActionResult Listar()
         {
             return Ok(estiloRepository.Listar());
         }//Listar()
 
+        [Authorize(Roles = "ADMINISTRADOR")]
         [HttpPost]
         public IActionResult Cadastrar(Estilos estilo)
         {
@@ -39,6 +42,7 @@ namespace Senai.Optus.WebApi.Controllers
             }
         }//Cadastrar()
 
+        [Authorize]
         [HttpGet("{id}")]
         public IActionResult BuscarPorid(int id)
         {
@@ -52,6 +56,7 @@ namespace Senai.Optus.WebApi.Controllers
             return Ok(estiloBuscado);
         }//BuscarPorId
 
+        [Authorize(Roles = "ADMINISTRADOR")]
         [HttpDelete("{id}")]
         public IActionResult Deletar(int id)
         {
@@ -59,6 +64,7 @@ namespace Senai.Optus.WebApi.Controllers
             return Ok();
         }
 
+        [Authorize(Roles = "ADMINISTRADOR")]
         [HttpPut]
         public IActionResult Atualizar(Estilos estilo)
         {
@@ -78,5 +84,26 @@ namespace Senai.Optus.WebApi.Controllers
             }
         }
 
-    }//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        [HttpGet("quantidade")]
+        public IActionResult ContarEstilos()
+        {
+            return Ok(estiloRepository.QuantidadeEstilos());
+        }
+
+        [HttpGet("{id}/artistas")]
+        public IActionResult ListarArtistasPorIdEstilo(int id)
+        {
+            return Ok(estiloRepository.ListarArtistasPorEstilo(id));
+        }
+
+
+        //[HttpGet("{estilo}/artistas")]
+        //public IActionResult ListarArtistasPorNomeEstilo(string estilo)
+        //{
+        //    return Ok(estiloRepository.ListarArtistasPorEstilo(estilo));
+        //}
+
+
+
+    }//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 }

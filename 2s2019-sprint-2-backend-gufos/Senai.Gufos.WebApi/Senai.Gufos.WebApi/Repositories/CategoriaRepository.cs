@@ -1,4 +1,5 @@
-﻿using Senai.Gufos.WebApi.Domains;
+﻿using Microsoft.AspNetCore.Authorization;
+using Senai.Gufos.WebApi.Domains;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace Senai.Gufos.WebApi.Repositories
         /// Listar todas as categorias
         /// </summary>
         /// <returns>Lista de Categorias</returns>
+        
         public List<Categorias> Listar()
         {
             using (GufosContext ctx = new GufosContext())
@@ -19,7 +21,7 @@ namespace Senai.Gufos.WebApi.Repositories
                 ///SELECT * FROM Categorias
                 return ctx.Categorias.ToList();
             }
-        }//end_Listar()
+        }
 
 
         /// <summary>
@@ -34,7 +36,7 @@ namespace Senai.Gufos.WebApi.Repositories
                 ctx.Categorias.Add(categoria);
                 ctx.SaveChanges();
             }
-        }//end_method
+        }
 
 
         /// <summary>
@@ -61,7 +63,10 @@ namespace Senai.Gufos.WebApi.Repositories
                 ctx.Categorias.Remove(categoriaBuscada);
                 ctx.SaveChanges();
             }
-        }///////--
+        }
+
+
+
 
         public void Atualizar(Categorias categoria)
         {
