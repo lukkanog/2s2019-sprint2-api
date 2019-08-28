@@ -9,7 +9,11 @@ namespace Senai.Gufos.WebApi.Repositories
 {
     public class UsuarioRepository
     {
-
+        /// <summary>
+        /// Busca um usuario atraves do email e senha passados como parametro
+        /// </summary>
+        /// <param name="login">LoginViewModel</param>
+        /// <returns>Um usuario</returns>
         public Usuarios BuscarPorEmailESenha(LoginViewModel login)
         {
             using (GufosContext ctx = new GufosContext())
