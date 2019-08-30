@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -19,12 +20,28 @@ namespace Senai.Ekips.WebApi.Controllers
         FuncionarioRepository funcionarioRepository = new FuncionarioRepository();
         
         // ARRUMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA a permissao e tal
-        [Authorize(Roles = "ADMINISTRADOR")]
+        [Authorize]
         [HttpGet]
         public  IActionResult Listar()
         {
-            return Ok(funcionarioRepository.ListarTodos());
+            var usuario = HttpContext.User;
+
+            if (usuario.HasClaim(ClaimTypes.Role,"ADMINISTRADOR"))
+            {
+                return Ok(funcionarioRepository.ListarTodos());
+
+            }else if (usuario.HasClaim(ClaimTypes.Role,"COMUM"))
+            {
+                var idFuncionario = int.Parse(usuario.Claims.First(x=> x.Type == JwtRegisteredClaimNames.Jti).Value);
+                return Ok(funcionarioRepository.BuscarPorId(idFuncionario));
+            }
+            else
+            {
+                return Forbid();
+            }
+            
         }
+
 
         [Authorize(Roles = "ADMINISTRADOR")]
         [HttpPost]
@@ -40,6 +57,8 @@ namespace Senai.Ekips.WebApi.Controllers
                 return BadRequest(new { Mensagem = $"Deu ruim, vê aí: {ex.Message}" });         
             }
         }
+
+
 
         [Authorize(Roles = "ADMINISTRADOR")]
         [HttpPut("{id}")]

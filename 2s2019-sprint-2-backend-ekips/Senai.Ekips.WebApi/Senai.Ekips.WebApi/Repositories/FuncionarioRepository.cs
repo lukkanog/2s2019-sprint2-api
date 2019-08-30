@@ -66,6 +66,7 @@ namespace Senai.Ekips.WebApi.Repositories
         }
 
 
+
         public void Cadastrar(Funcionarios funcionario)
         {
             using (EkipsContext ctx = new EkipsContext())
