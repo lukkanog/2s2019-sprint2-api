@@ -1,0 +1,14 @@
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\bin\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.deps.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\bin\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.runtimeconfig.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\bin\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.runtimeconfig.dev.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\bin\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.dll
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\obj\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.csprojAssemblyReference.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\obj\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\obj\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.RazorAssemblyInfo.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\obj\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.RazorAssemblyInfo.cs
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\obj\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.AssemblyInfoInputs.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\obj\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.AssemblyInfo.cs
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\obj\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\bin\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.pdb
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\obj\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.dll
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-sprint2-api\Senai.Cgstore.WebApi\Senai.Cgstore.WebApi\obj\Debug\netcoreapp2.1\Senai.Cgstore.WebApi.pdb
