@@ -1,4 +1,5 @@
 ﻿using Senai.AutoPecas.WebApi.Domains;
+using Senai.AutoPecas.WebApi.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,6 @@ namespace Senai.AutoPecas.WebApi.Interfaces
         void Cadastrar(Pecas peca);
         void Atualizar(Pecas peca);
         void Excluir(Pecas peca);
+        List<GanhoViewModel> CalcularGanho(int idFornecedor);
     }
 }
