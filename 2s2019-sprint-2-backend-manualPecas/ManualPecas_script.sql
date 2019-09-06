@@ -1,0 +1,43 @@
+CREATE DATABASE M_ManualPecas
+
+USE M_ManualPecas
+
+CREATE TABLE Fornecedores(
+	IdFornecedor INT PRIMARY KEY IDENTITY
+	,Nome VARCHAR(255) NOT NULL UNIQUE
+	,Email VARCHAR(255) NOT NULL UNIQUE
+	,Senha VARCHAR(255) NOT NULL
+)
+
+CREATE TABLE Pecas (
+	IdPeca INT PRIMARY KEY IDENTITY
+	,Codigo VARCHAR(255) NOT NULL
+	,Descricao VARCHAR(255) NOT NULL
+)
+
+CREATE TABLE Vendas(
+	IdPeca INT FOREIGN KEY REFERENCES Pecas(IdPeca) NOT NULL
+	,IdFornecedor INT FOREIGN KEY REFERENCES Fornecedores(IdFornecedor) NOT NULL
+	,Preco MONEY NOT NULL
+)
+
+DROP TABLE Fornecedores
+DROP TABLE Vendas
+
+INSERT INTO Fornecedores VALUES ('2 irmãos','irmaos@email.com','123123')
+INSERT INTO Fornecedores VALUES ('Primos construtora','primos@email.com','123123')
+
+INSERT INTO Pecas VALUES ('a1','tijolo baiano')
+INSERT INTO Pecas VALUES ('b2','tijolo americano')
+
+
+INSERT INTO Vendas VALUES (1,2,29.90)
+INSERT INTO Vendas VALUES (1,1,23.90)
+INSERT INTO Vendas VALUES (2,2,49.90)
+INSERT INTO Vendas VALUES (2,1,39.90)
+
+SELECT * FROM Vendas
+
+DELETE FROM Vendas WHERE PRECO = 199.99
+
+SELECT * FROM FORNecedores
